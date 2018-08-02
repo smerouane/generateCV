@@ -1,0 +1,181 @@
+{% extends "layout.html.twig" %}
+{% block stylesheets %}
+    
+    <link rel="stylesheet" type="text/css" href="{{  base_dir ~asset('CV/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  base_dir ~asset('CV/css/flaticon.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  base_dir ~asset('CV/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  base_dir ~asset('CV/css/magnific-popup.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  base_dir ~asset('CV/css/owl.carousel.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  base_dir ~asset('CV/css/style.css')}}">
+{% endblock %}
+
+
+
+{% block body %}
+
+   
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4">   <img src="{{ base_dir ~asset('CV/img/cvImg.jpeg') }}" class="rounded-circle" style="width: 190px;height: 190px; margin-bottom: 12px"></div>
+                    
+                        <div class="col-lg-8"><h2>Développeur Symfony</h2></div>
+                    </div>   
+                </div>
+
+
+   
+   
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="main-left-area h-100">
+                        <section class="intro-section">
+                            <div>
+                                <h2 style="color:#009fff">Sofiane Merouane</h2>
+
+                            </div>
+
+
+                                <p>Adresse: 10 avenue d'uriage 38610 Giéres<br>Mail: sofmerouane@yahoo.com<br>Tel: 06 50 46 30 05</p>
+
+                         
+
+                           
+                            <div class="">
+                                <h2 style="color:#009fff">COMPETENCES</h2>
+                            </div>
+                           <br />
+                            <ul class="language-progress">
+                                <li>Symfony <div class="lan-prog" data-lanprogesss="2"></div></li>
+                                <li>MySQL <div class="lan-prog" data-lanprogesss="2"></div></li>
+                                <li>jQuery <div class="lan-prog" data-lanprogesss="2"></div></li>
+                                <li>QlikView <div class="lan-prog" data-lanprogesss="1"></div></li>
+                                <li>Talend <div class="lan-prog" data-lanprogesss="1"></div></li>
+                                <li>Drupal8 <div class="lan-prog" data-lanprogesss="1"></div></li>
+                                <li>Bootstrap <div class="lan-prog" data-lanprogesss="2"></div></li>
+                            </ul>
+                        </section>
+                         
+                        <div class="">
+                            <h2 style="color:#009fff">REFERENCES</h2>
+                        </div>
+                         <br/>
+                        <div class="single-review">
+
+                            <h3>David Gras</h3>
+                            <h3>Administarteur systéme</h3>
+                            <p>CNRS - Délégation Alpes Service des Systèmes d'Information<br />25, rue des martyrs - BP 166 38 042 Grenoble Cedex 9<br/>tel : +33 (0)4 76 88 11 63<br/>fax : +33 (0)4 76 88 90 19<br />mail : david.gras@dr11.cnrs.fr . </p>
+
+                        </div>
+
+                        <div class="">
+                            <h2 style="color:#009fff">LANGUES<span><i class="fa fa-language"></i></span></h2>
+                        </div>
+                         <br/>
+                        <div>
+                            <h3>Français : Courant</h3>
+                            <h3>Anglais : Correct</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="main-right-area">
+                        <!-- Resume section start -->
+                        <section class="resume-section spad pt-0">
+                            <div class="">
+                                <h2 style="color:#009fff"><img src="{{ base_dir ~asset('CV/img/experience.png') }}" style="float: none; height: 60px;width: 50px;">&nbsp;EXPÉRIENCES</h2><br />
+
+                            </div>
+                            <ul class="resume-list">
+                                <li>
+                                    <h4>Depuis Avril 2017</h4>
+                                    <h2>Développeur Symfony</h2>
+                                  
+                                    <h4>CNRS Délégation alpes</h4>
+                                    <p>- Migration de la V2.8 vers la version 3.4 de symfony.</p>
+                                    <p>- Réeciture du code existant</p>
+                                    <p>- Ddéveloppement de nouvelles fonctionnalités</p>
+                                    <p>- Utilisation git comme outil de versionning. </p>
+                                </li>
+                                <li>
+                                     <h4>10/2016 - 01/2017</h4>
+                                    <h2>Développeur Drupal8</h2>
+                                   
+                                    <h4>Planet@dev</h4>
+                                    <p>- Participation au développement  d'une application médicale. </p>
+                                    <p>- Développement d'un module prise de rendez vous et relance des rdv. </p>
+                                </li>
+                                <li>
+                                     <h4>05/2015 - 09/2015</h4>
+                                    <h2>Stage Développeur web PHP</h2>
+                                   
+                                    <h4>UFR upmf de Grenoble</h4>
+                                    <p>- Développement d'une plate-forme  "Gestion des stages". </p>
+                                    <p>- Intégration des bundle symfony . </p>
+                                    <p>- Manipulation des données avec l'ORM doctrine. </p>
+                                </li>
+                            </ul>
+
+                        <!-- Resume section end -->
+
+                        <!-- Resume section start -->
+
+                         <br />
+                                <h2 style="color:#009fff"><img src="{{ base_dir ~asset('CV/img/formation.jpg') }}" style="float: none; height: 60px;width: 50px;">&nbsp;FORMATIONS</h2>
+
+                            <ul class="resume-list">
+                                <li>
+                                    <h4> Septembre 2015 </h4>
+                                    <h2>Master2 informatique et mathématique appliquées</h2>
+                                    <h4>UPMF de Grenoble</h4>
+                                    <p>Bac+5 et plus ou équivalent - Informatique - Université. </p>
+                                </li>
+
+                            </ul>
+                                 <br />
+                  
+                            <div class="">
+                                <h2 style="color:#009fff"><img src="{{ base_dir ~asset('CV/img/loisir.jpg') }}" style="float: none; height: 60px;width: 50px">LOISIRS</h2>
+
+
+                               <br />
+
+                                <div class="icon-box">
+                                    <i class="flaticon-032-cooking"></i>
+                                    <p>Cuisine</p>
+                                </div>
+                                <div class="icon-box">
+                                    <i class="fa fa-futbol-o"></i>
+                                    <p>Football</p>
+                                </div>
+                                <div class="icon-box">
+                                    <i class="fa fa-bicycle"></i>
+                                    <p>Vélo</p>
+                                </div>
+
+                                <div class="icon-box">
+                                    <i class="flaticon-035-tent"></i>
+                                    <p>Camping</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <!-- skill section end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
+
+{% block javascripts %}
+         <script src="{{ base_dir ~asset('CV/js/jquery-2.1.4.min.js') }}"></script>
+          <script src="{{ base_dir ~asset('CV/js/main.js') }}"></script>
+  
+
+{% endblock %}

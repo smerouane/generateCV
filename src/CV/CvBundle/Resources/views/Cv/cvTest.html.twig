@@ -1,0 +1,182 @@
+{% extends "layout.html.twig" %}
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/flaticon.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/owl.carousel.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/style.css')}}">
+{% endblock %}
+
+
+
+{% block body %}
+{{ parent() }}
+    <header class="header-section" >
+
+        <div class="col-md-10">
+
+            <h2 style="text-align: center; color: black;">Développeur Symfony</h2>
+            <br />
+
+            <div id='testAjaxLoader'>click Me</div>
+        </div>
+
+
+    </header>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="main-left-area h-100">
+                    <section class="intro-section">
+                        <!--<figure class="hero-image">
+                                <img src="{{ asset('img/cvImg.jpeg') }}" alt="" style="width: 150px; height: 200px">
+                         </figure>-->
+
+                        <div style="color: black">
+                            <h2>Sofiane Merouane</h2>
+
+                        </div>
+
+
+                        <p>Adresse: 10 avenue d'uriage 38610 Giéres<br>Mail: sofmerouane@yahoo.com<br>Tel: 06 50 46 30 05</p>
+
+
+
+
+                        <div class="">
+                            <h2>Compétences</h2>
+                        </div>
+
+                        <ul class="language-progress">
+                            <li>Symfony <div class="lan-prog" data-lanprogesss="1" id="progresse"></div></li>
+                            <li>MySQL <div class="lan-prog" data-lanprogesss="0" id="progresse"></div></li>
+                            <li>jQuery <div class="lan-prog" data-lanprogesss="0" id="progresse"></div></li>
+                            <li>QlikView <div class="lan-prog" data-lanprogesss="0" id="progresse"></div></li>
+                            <li>Talend <div class="lan-prog" data-lanprogesss="0" id="progresse"></div></li>
+                            <li>Drupal8 <div class="lan-prog" data-lanprogesss="0" id="progresse"></div></li>
+                            <li>Bootstrap <div class="lan-prog" data-lanprogesss="0" id="progresse"></div></li>
+                        </ul>
+                    </section>
+
+                    <div class="">
+                        <h2>References</h2>
+                    </div>
+
+                    <div class="single-review">
+
+                        <h3>David Gras</h3>
+                        <h4>Administarteur systéme et réseaux</h4>
+                        <p>CNRS - Délégation Alpes Service des Systèmes d'Information<br />25, rue des martyrs - BP 166 38 042 Grenoble Cedex 9<br/>tel : +33 (0)4 76 88 11 63<br/>fax : +33 (0)4 76 88 90 19<br />mail : david.gras@dr11.cnrs.fr . </p>
+
+                    </div>
+
+                    <div class="">
+                        <h2>Langues <span><i class="fa fa-language"></i></span></h2>
+                    </div>
+
+                    <div class="single-review">
+                        <h4>Français : Courant</h4>
+                        <h4>Anglais : Correct</h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="main-right-area">
+                    <!-- Resume section start -->
+                    <section class="resume-section spad pt-0">
+                        <div class="">
+                            <h2><img src="{{ asset('img/exeperience2.png') }}" style="float: none; height: 60px;width: 50px">EXPÉRIENCES</h2>
+
+                        </div>
+                        <ul class="resume-list">
+                            <li>
+                                <h2>Poste actuel depuis Avril 2017</h2>
+                                <h3>Développeur Symfony</h3>
+                                <h4 style="color: black;">CNRS Délégation alpes</h4>
+                                <p>J'ai travaillé sur une application national avec trois autres développeurs.</p>
+                                <p>J'ai participé à la réeciture du code existant et au développements de nouvelles fonctionnalités.</p>
+                                <p>Utilisation git comme outil de versionning. </p>
+                            </li>
+                            <li>
+                                <h2>10/2016 - 01/2017</h2>
+                                <h3>Développeur Drupal8</h3>
+                                <h4 style="color: black;">Planet@dev</h4>
+                                <p>Participation au développemnt  d'une application médicale. </p>
+                                <p>Développement d'un module prise de rendez vous et relance des rdv. </p>
+                            </li>
+                            <li>
+                                <h2>05/2015 - 09/2015</h2>
+                                <h3>Stage Développeur web PHP</h3>
+                                <h4 style="color: black;">UFR upmf de Grenoble</h4>
+                                <p>Développemnt d'une plate-forme web "Gestion des stages". </p>
+                                <p>Intégration des bundle symfony . </p>
+                                <p>Manipulation des données avec l'ORM doctrine. </p>
+                            </li>
+                        </ul>
+
+                        <!-- Resume section end -->
+
+                        <!-- Resume section start -->
+
+
+                        <h2><img src="{{ asset('img/formation.png') }}" style="float: none; height: 60px;width: 50px">FORMATIONS</h2>
+
+                        <ul class="resume-list">
+                            <li>
+                                <h2>20015</h2>
+                                <h3>Master2 informatique et mathématique appliquées</h3>
+                                <h4>UPMF de Grenoble</h4>
+                                <p>Bac+5 et plus ou équivalent - Informatique - Université. </p>
+                            </li>
+
+                        </ul>
+
+                        <div class="">
+                            <h2><img src="{{ asset('img/loisir.jpg') }}" style="float: none; height: 60px;width: 50px">Loisirs</h2>
+
+                        </div>
+
+
+                        <div class="icon-box">
+                            <i class="flaticon-032-cooking"></i>
+                            <p>Cuisine</p>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-futbol-o"></i>
+                            <p>Football</p>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-bicycle"></i>
+                            <p>Vélo</p>
+                        </div>
+
+                        <div class="icon-box">
+                            <i class="flaticon-035-tent"></i>
+                            <p>Camping</p>
+                        </div>
+
+                    </section>
+
+                    <!-- skill section end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/circle-progress.min.js') }}"></script>
+    <script src="{{ asset('js/magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+
+{% endblock %}

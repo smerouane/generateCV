@@ -1,0 +1,50 @@
+{% extends "layout.html.twig" %}
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/flaticon.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/owl.carousel.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{  asset('css/style.css')}}">
+{% endblock %}
+
+
+
+{% block body %}
+    <div id="app">
+        ${ message}
+    </div>
+
+    <div id="app-2">
+  <span v-bind:title="message">
+    Passez votre souris sur moi pendant quelques secondes
+    pour voir mon titre lié dynamiquement !
+  </span>
+    </div>
+
+    <div id="app-3">
+        <p v-if="seen">Maintenant vous me voyez</p>
+    </div>
+
+    <div id="app-4">
+        <ul>
+            <li v-for="todo in todos">
+                ${ todo.text }
+            </li>
+        </ul>
+    </div>
+
+    <div id="app-5">
+        <p> ${ message}</p>
+        <button v-on:click="reverseMessage">Message retourné</button>
+    </div>
+    <div id="app-6">
+        <p>${ message}</p>
+        <input v-model="message">
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/vue/vue.min.js') }}"></script>
+    <script src="{{ asset('js/vueJsTest.js') }}"></script>
+{% endblock %}

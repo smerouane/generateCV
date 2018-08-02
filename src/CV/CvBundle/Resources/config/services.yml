@@ -1,0 +1,6 @@
+services:
+#    Cv.example:
+#        class: CV\CvBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+   converterHtml2Pdf:
+        class: CV\CvBundle\Services\ConverterHtml2Pdf
